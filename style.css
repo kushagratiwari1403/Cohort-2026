@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url("./fonts/CursorGothic-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url("./fonts/CursorGothic-Italic.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url("./fonts/CursorGothic-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CursorGothic;
+  src: url("./fonts/CursorGothic-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #14120b;
+  max-width: 1300px;
+  margin: auto;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+/* Top Nav Bar */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.quick-links ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.sign-in {
+  padding: 4px 10px;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #edecec;
+  border: 1px solid #edecec;
+  margin-right: 4px;
+}
+
+.download {
+  padding: 4px 10px;
+  border-radius: 60px;
+  background-color: #edecec;
+  color: #14120b;
+  border: 1px solid #edecec;
+}
+
+/* Hero Section */
+
+.hero-section {
+  margin-top: 120px;
+}
+
+.hero-title {
+  color: #edecec;
+}
+
+.hero-cta {
+  padding: 10px 32px;
+  border-radius: 90px;
+  margin-top: 20px;
+}
+
+.bg-img-section {
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.code-img {
+  position: absolute;
+  width: 85%;
+  border-radius: 8px;
+}
+
+/* Testimonials */
+
+.testimonial {
+  margin-top: 80px;
+}
+
+.testimonial-title {
+  color: #edecec;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.logo-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1913;
+  width: 160px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Features */
+
+.feature {
+  background-color: #1b1913;
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.content {
+  color: #edecec;
+}
+
+.img-section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-bg-img {
+  border-radius: 4px;
+}
+
+.feature-cta {
+  margin-top: 12px;
+  color: #f54e00;
+}
+
+.feature-img {
+  position: absolute;
+  width: 660px;
+  height: 480px;
+  border-radius: 8px;
+}
+
+.content-2 {
+  color: #edecec;
+  margin-right: 130px;
+}
+
+/* Reviews */
+
+.reviews {
+  margin-top: 80px;
+}
+
+.review-title {
+  color: #edecec;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background-color: #1b1913;
+  color: #edecec;
+  padding: 20px;
+  height: 280px;
+  border-radius: 6px;
+}
+
+.user-info {
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-img img {
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Explore Section */
+
+.explore-section {
+  border: solid purple;
+  height: 500px;
+  margin-top: 160px;
+}
+
+.explore-title h2 {
+  color: #edecec;
+}
+
+.explore-container {
+  border: solid burlywood;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.explore-card {
+  border: solid white;
+  color: #edecec;
+  padding: 16px;
+  background-color: #1b1913;
+  border-radius: 4px;
+}
+
+.img-bg1 {
+  margin-top: 24px;
+  height: 380px;
+  background-color: rgb(77, 63, 52);
+  border-radius: 4px;
+}
+
+.img-bg2 {
+  margin-top: 24px;
+  height: 380px;
+  background-color: rgb(55, 61, 42);
+  border-radius: 4px;
+}
