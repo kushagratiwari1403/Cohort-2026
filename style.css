@@ -5,42 +5,42 @@
 }
 
 @font-face {
-  font-family: CursorGothic;
-  src: url("./fonts/CursorGothic-Regular.woff2") format("woff2");
-  font-display: swap;
+  font-family: "CursorGothic";
+  src: url("./public/fonts/CursorGothic-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: CursorGothic;
-  src: url("./fonts/CursorGothic-Italic.woff2") format("woff2");
-  font-display: swap;
+/* @font-face {
+  font-family: "CursorGothic";
+  src: url("./public/fonts/CursorGothic-Italic.woff2") format("woff2");
   font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: CursorGothic;
-  src: url("./fonts/CursorGothic-Bold.woff2") format("woff2");
+  font-style: normal;
   font-display: swap;
+} */
+
+/* @font-face {
+  font-family: "CursorGothic";
+  src: url("./public/fonts/CursorGothic-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: CursorGothic;
-  src: url("./fonts/CursorGothic-BoldItalic.woff2") format("woff2");
   font-display: swap;
+} */
+
+/* @font-face {
+  font-family: "CursorGothic";
+  src: url("./public/fonts/CursorGothic-BoldItalic.woff2") format("woff2");
   font-weight: 700;
-  font-style: italic;
-}
+  font-style: normal;
+  font-display: swap;
+} */
 
 body {
   background-color: #14120b;
   max-width: 1300px;
   margin: auto;
-  font-family: "MyCustomFont", sans-serif;
+  font-family: "CursorGothic", sans-serif;
 }
 
 /* Top Nav Bar */
@@ -50,7 +50,9 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-style: normal;
 }
 
 .quick-links ul {
@@ -68,8 +70,9 @@ body {
   border-radius: 60px;
   background-color: transparent;
   color: #edecec;
-  border: 1px solid #edecec;
+  border: 1px solid rgba(237, 236, 236, 0.2);
   margin-right: 4px;
+  font-size: 14px;
 }
 
 .download {
@@ -78,6 +81,7 @@ body {
   background-color: #edecec;
   color: #14120b;
   border: 1px solid #edecec;
+  font-size: 14px;
 }
 
 /* Hero Section */
@@ -88,12 +92,16 @@ body {
 
 .hero-title {
   color: #edecec;
+  font-size: 26px;
+  font-weight: 200;
 }
 
 .hero-cta {
-  padding: 10px 32px;
+  padding: 12px 32px;
   border-radius: 90px;
   margin-top: 20px;
+  font-size: 13px;
+  border: transparent;
 }
 
 .bg-img-section {
@@ -125,6 +133,7 @@ body {
 .testimonial-title {
   color: #edecec;
   text-align: center;
+  font-size: 14px;
 }
 
 .logos {
@@ -160,6 +169,11 @@ body {
   color: #edecec;
 }
 
+.content-text {
+  font-size: 22px;
+  line-height: 28.6px;
+}
+
 .img-section {
   display: flex;
   position: relative;
@@ -183,21 +197,27 @@ body {
   border-radius: 8px;
 }
 
-.content-2 {
+.content-3 {
   color: #edecec;
-  margin-right: 130px;
+  margin-right: 40px;
 }
 
+.content-2 {
+  color: #edecec;
+  margin-right: 40px;
+}
 /* Reviews */
 
 .reviews {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .review-title {
   color: #edecec;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 36px;
+  letter-spacing: -0.7px;
 }
 
 .card-container {
@@ -215,11 +235,26 @@ body {
   border-radius: 6px;
 }
 
+.review-msg {
+  height: 198px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
 .user-info {
-  margin-top: 110px;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.client-name {
+  font-size: 14px;
+}
+
+.client-designation {
+  font-size: 14px;
+  color: rgba(237, 236, 236, 0.6);
 }
 
 .user-img img {
@@ -232,7 +267,7 @@ body {
 
 .explore-section {
   border: solid purple;
-  height: 500px;
+
   margin-top: 160px;
 }
 
@@ -267,4 +302,152 @@ body {
   height: 380px;
   background-color: rgb(55, 61, 42);
   border-radius: 4px;
+}
+
+.img-bg3 {
+  margin-top: 24px;
+  height: 380px;
+}
+
+.img-bg {
+  border-radius: 4px;
+}
+
+/* Changelog Section */
+
+.changelog {
+  border: solid white;
+  margin-top: 160px;
+  color: #edecec;
+}
+
+.changelog-title {
+  border: solid orange;
+}
+
+.changelog-card-container {
+  border: solid pink;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.changelog-card {
+  background-color: #1b1913;
+  border: solid brown;
+}
+
+.changelog-cta {
+  margin-top: 24px;
+  color: #f54e00;
+}
+
+/* Join-us Section */
+
+.join-us {
+  border: solid pink;
+  margin-top: 100px;
+}
+
+.content {
+  margin-top: 48px;
+  margin-bottom: 56px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.join-us-img {
+  border-radius: 6px;
+}
+
+/* Recent Highlights Section */
+
+.recent-highlights {
+  border: solid greenyellow;
+  margin-top: 120px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #1b1913;
+  display: flex;
+  justify-content: center;
+  color: #edecec;
+}
+
+.main-highlight-container {
+  border: solid purple;
+  width: 1300px;
+}
+
+.main-highlight-container2 {
+  border: solid rgb(255, 1, 200);
+  display: flex;
+  gap: 260px;
+}
+
+.highlight-card {
+  background-color: #26241e;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.highlight-cta {
+  margin-top: 24px;
+  padding-left: 10px;
+}
+
+/* CTA Banner Section */
+.cta-banner {
+  border: solid white;
+  text-align: center;
+  color: #edecec;
+  margin: 80px 0px;
+  padding: 80px 0px;
+}
+
+.cta-banner button {
+  padding: 12px 24px;
+  margin-top: 24px;
+  border-radius: 90px;
+}
+
+/* Footer Section */
+
+.footer {
+  border: solid orange;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: #1b1913;
+  display: flex;
+  justify-content: center;
+  color: #edecec;
+}
+
+.footer-container1 {
+  border: solid blue;
+  width: 1300px;
+  padding-top: 32px;
+}
+
+.footer-container {
+  border: solid green;
+}
+
+.footer-quick-links {
+  border: solid purple;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-quick-links ul li {
+  padding-bottom: 12px;
+}
+
+.copyright {
+  margin: 48px 0px;
+  border: dotted palegreen;
 }
